@@ -60,7 +60,7 @@ namespace Freq_found_words
 
             foreach (string str in readFile)
             {
-                string _newString = Regex.Replace(str, "[-.?!)(,:]", "").ToLower();
+                string _newString = Regex.Replace(str, "[-.?!)(,:]", "").ToUpper();
                 string[] _words = _newString.Split(' ');
                 foreach (string word in _words)
                 {
